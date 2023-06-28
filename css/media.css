@@ -2,25 +2,46 @@
      .container {
         max-width: 428px;
     }
-    .main-content-item-one  {
+    .main-content-item-one {
         max-width: 396px;
 }
+        
 }
 @media screen and (min-width: 768px) {
      .container {
         max-width: 768px;
      }
-}
+
      .main-content-item-one {
         max-width: unset;
         width: calc((100% - 24px) / 2);
     }
-    .main-strategi {
-        gap: 72px 24px;
+        .main-strategi {
+            gap: 24px;
+
     }
-    .section-content-one {
+        .section-content-one {
         padding-top: 96px;
         padding-bottom: 96px;
     }
-@media screen and (min-width: 768px) {
+        .team-title-list {
+        gap: 24px;
+    }
+        .team-title-item {
+        width: calc((100%-24px)/2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        
+    }
+    .team-title-list {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .team-title-item {
+        width: calc((100%-24px)/4);
+}
 }
