@@ -34,11 +34,11 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 .container {
-    width: 100%;
     max-width: 1158px;
-    padding-left: 15px; 
-    padding-right: 15px;
+    padding-left: 16px; 
+    padding-right: 16px;
     margin: 0 auto;  
+    min-width: 320px;
 }
 .header {
     border-bottom: 1px solid #e7e9fc; 
@@ -195,7 +195,9 @@ p, h1, h2, h3, h4, h5, h6 {
     width: calc((100% - 48px) / 3);
 }
 .main-content-item-one {
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+    display: list-item;
+
 }
 .visually-hidden {
     position: fixed;
@@ -309,9 +311,8 @@ p, h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 .section-content-one {
-    padding: 120px 0;
-
-
+    padding: 96px 0px;
+    margin: 0 auto;
 }
 .section-content {
     padding: 188px 0;
@@ -328,16 +329,25 @@ url(../images/img-name.jpg);
 }
 .main-strategy-title {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:var(--primary-text-color);
     margin-bottom: 8px;
+    text-align: center;
 }
 .main-strategy-text {
+    /* font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+       */
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: var(--text-color-paragraf);
 }
 
 .main-content-div {
@@ -345,7 +355,7 @@ url(../images/img-name.jpg);
 
 .main-content-div-two {
     background-color: #F4F4FD;
-    display: flex; 
+    display: none; 
     align-items: center;
     justify-content: center; 
     height: 112px;
@@ -411,14 +421,17 @@ url(../images/img-name.jpg);
     padding-bottom: 120px; 
     
 }
-
+.technologies-one {
+    display: none;
+}
 .main-strategi {
     display: flex;
-    gap: 24px;
-    padding-left: 0px;
-    padding-right: 0px;
+    gap: 72px;
+    /* padding-left: 0px;
+    padding-right: 0px; */
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
    
 }
 .link-content {
@@ -466,7 +479,8 @@ url(../images/img-name.jpg);
 }  
 .team-title-item {
     background-color: #FFFFFF;
-    width: calc((100%-72)/4);
+    /* width: calc((100%-72)/4); */
+    display: list-item;
     text-align: center; 
     border-radius: 0px 0px 4px 4px;
     box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
