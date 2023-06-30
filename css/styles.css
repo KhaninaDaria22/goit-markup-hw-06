@@ -1026,7 +1026,7 @@ url(../images/img-name.jpg);
     
    }
     .team-title-icone {
-        width: calc((100% - 24px) / 3); 
+        width: calc((100% - 48px) / 3); 
         
     }
 }
