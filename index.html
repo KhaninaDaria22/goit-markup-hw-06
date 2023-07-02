@@ -14,32 +14,35 @@
         
 </head>
 <body> 
-        <header class="header">
+         <header class="header">
             <div class="header-container container">
-            <nav class="header-navigation">
-            <a  class="header-logo link" href="./index.html"> Web<span class="span">Studio</span></a>
-            <ul class="header-menu-list list">
-                <li> <a class="header-menu-link link current" href="./index.html">Studio</a></li>
-                <li> <a class="header-menu-link link" href="./portfolio.html">Portfolio</a></li>
-                <li> <a class="header-menu-link link" href="">Contacts</a></li>
-            </ul>
-            </nav>
+                <nav class="header-navigation">
+                    <a  class="header-logo link" href="./index.html"> Web<span class="span">Studio</span></a>
+                    <ul class="header-menu-list list">
+                        <li> <a class="header-menu-link link current" href="./index.html">Studio</a></li>
+                        <li> <a class="header-menu-link link" href="./portfolio.html">Portfolio</a></li>
+                        <li> <a class="header-menu-link link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
              <address class="addres">
                 <ul class="header-addres list">
                     <li class="header-address-item"><a class="header-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
                     <li class="header-address-item"><a class="header-address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul> 
              </address>
-             <button type="button" class="open-menu-btn">
+             <button type="button" class="open-menu-btn" data-menu-open>
                 <svg class="svg-gamburger" width="32" height="22">
-                    <use href="./images/icons.svg#icon-charm_menu-hamburger">
+                    <use href="./images/icons.svg#icon-icon-menu">
                     </use>
                 </svg>
              </button>
             </div>
-            <div class="mob-menu"> 
-                <div>
-                    <button type="button" class="close-menu-btn">x</button>
+            <div class="mob-menu is-hidden" data-menu> 
+                    <button type="button" class="close-menu-btn" data-menu-close>
+                        <svg class="footer-svg-modal" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                        </svg>
+                    </button>
                     <nav>
                     <ul class="mob-menu-list list">
                         <li class="mob-menu-item"> <a class="mob-menu-link link" href="./index.html">Studio</a></li>
@@ -47,11 +50,12 @@
                         <li class="mob-menu-item"> <a class="mob-menu-link link" href="">Contacts</a></li>
                     </ul>
                     </nav>
-                </div>
+                <div class="mob-div">
                  <address class="addres">
                     <ul class="mob-addres list">
-                        <li class="mob-address-item"><a class="header-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-                        <li class="mob-address-item"><a class="header-address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        <li class="mob-address-item"><a class="header-address-link-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        <li class="mob-address-item"><a class="header-address-link-email link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
+                        
                     </ul> 
                  </address>
                  <ul class="mob-menu-list-svg">
@@ -80,10 +84,11 @@
                            <a class="mob-menu-link-svg" href="">
                              <svg class="mob-menu-footer-svg" width="24" height="24">
                                <use href="./images/icons.svg#icon-linkedin-1" ></use>
-                              </svg>
+                            </svg>
                           </a>
                      </li>
                </ul>
+                </div>
              </div>
         </header> 
 
@@ -521,5 +526,6 @@
             </div>
         </div> 
         <script src="./js/modal.js"></script>  
+        <script src="./js/menu.js"></script> 
 </body>
 </html>  
