@@ -1179,10 +1179,10 @@ url(../images/Dark-bg-mod.jpg);
   
    }
     .team-title-icone {
-        width: calc((100% - 72px) / 3);
+        width: calc((100% - 48px) / 3);
     }
     .customers-icons {
-        width: 552px;
+        max-width: 584px;
         
     }
     .header-address-link {
