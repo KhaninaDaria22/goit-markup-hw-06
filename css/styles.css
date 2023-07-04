@@ -1094,7 +1094,7 @@ url(../images/Dark-bg-mod.jpg);
 
 .footer-subscribe-form {
     display: flex;
-    flex-wrap: wrap;
+
     flex-direction: column;
     align-items: center;
     gap: 24px;
@@ -1307,9 +1307,7 @@ url(../images/Dark-bg-mod.jpg);
        
    }
    .team-title-list {
-       padding-left: 15px;
-       padding-right: 15px;
-       gap: 32px;
+       gap: 24px;
        flex-wrap: nowrap;
    }
    .team-title-item {
@@ -1325,14 +1323,14 @@ url(../images/Dark-bg-mod.jpg);
         justify-content: center;
         flex-wrap: wrap;
     }
-    .main-strategy-tex {
+    .main-strategy-text {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         font-family: Roboto;
         font-style: normal;
-        font-weight: 400;
         line-height: 24px;
+        font-weight: 400;
     }
     .main-content-div-two {
         background-color: #F4F4FD;
@@ -1399,9 +1397,7 @@ url(../images/Dark-bg-mod.jpg);
         gap: 40px;
         align-items: center;
     }
-    .header-container {
-        width: 1158px;
-    }
+
     .header-navigation {
         align-items: center;
         flex-grow: 1;
@@ -1443,6 +1439,9 @@ url(../images/Dark-bg-mod.jpg);
 }
 .open-menu-btn {
     opacity: 0;
+}
+.section-title {
+    margin-bottom: 36px;
 }
 
 }
