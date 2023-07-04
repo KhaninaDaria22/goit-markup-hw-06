@@ -182,7 +182,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .mob-menu-list-svg {
     display: flex;
-    gap: 64px;
+    gap: 35px;
     margin-top: 48px;
 
 }
@@ -465,7 +465,7 @@ url(../images/Dark-bg-mod.jpg);
     letter-spacing: 0.02em;
     color:var(--primary-text-color);
     margin-bottom: 8px;
-    text-align: left;
+    text-align: center;
 }
 .main-strategy-text {
     /* font-weight: 500;
@@ -1151,13 +1151,18 @@ url(../images/Dark-bg-mod.jpg);
     .subsctibe-input {
     width: 398px;
     }
+    .mob-menu-list-svg {
+    gap: 56px;
+    }
        
 }
 @media screen and (min-width: 768px) {
     .container {
        max-width: 768px;
     }
-
+.section-title {
+    margin-bottom: 36px;
+}
     .main-content-item-one {
        max-width: unset;
        width: calc((100% - 24px) / 2);
@@ -1295,6 +1300,9 @@ url(../images/Dark-bg-mod.jpg);
 .open-menu-btn {
     display: none;
 }
+.main-strategy-title {
+    text-align: left;
+}
 }
 
 @media screen and (min-width: 1158px) {
@@ -1313,6 +1321,9 @@ url(../images/Dark-bg-mod.jpg);
    .team-title-item {
        width: calc((100%-24px)/4);
        
+}
+.header-address-link {
+    font-size: 16px;
 }
     .main-strategi {
         display: flex;
@@ -1441,7 +1452,7 @@ url(../images/Dark-bg-mod.jpg);
     opacity: 0;
 }
 .section-title {
-    margin-bottom: 36px;
+    margin-bottom: 48px;
 }
 
 }
