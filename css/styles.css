@@ -35,21 +35,20 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .container {
     max-width: 428px;
-    padding-left: 16px; 
-    padding-right: 16px;
+    padding-left: 15px; 
+    padding-right: 15px;
     margin: 0 auto;  
     
 }
 .header {
     border-bottom: 1px solid #e7e9fc; 
+    padding-top: 25px;
+    padding-bottom: 24px;
 }
 .header-container {
     display: flex;
     min-width: 320px;
-    margin: 0 auto;
     align-items: center;
-    margin-bottom: 22px;
-    margin-top: 24px;
 
 }
 .c {
@@ -254,7 +253,6 @@ p, h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color-paragraf);
-    padding: 24px 0;
     align-items: center;
 }
 
@@ -461,13 +459,13 @@ url(../images/Dark-bg-mod.jpg);
     fill: var(--primary-text-color);
 }
 .main-strategy-title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:var(--primary-text-color);
     margin-bottom: 8px;
-    text-align: center;
+    text-align: left;
 }
 .main-strategy-text {
     /* font-weight: 500;
@@ -665,7 +663,7 @@ url(../images/Dark-bg-mod.jpg);
     border: 1px solid #FFFFFF;
     background: #2E2F42;
     border-radius: 4px;
-    Width: 100%;
+    Width: 290px;
     Height: 40px;
     line-height: 1.5;
     background-color: transparent; 
@@ -818,7 +816,6 @@ url(../images/Dark-bg-mod.jpg);
     color: #404bbf; 
 }
 .team-title-icone {
-    /* width: calc((100% - 120px) / 6);  */
     width: calc((100% - 16px) / 2); 
     height: 88px;
 
@@ -1151,7 +1148,9 @@ url(../images/Dark-bg-mod.jpg);
    .main-content-item-one {
        max-width: 396px;
 }
-    
+    .subsctibe-input {
+    width: 398px;
+    }
        
 }
 @media screen and (min-width: 768px) {
@@ -1175,21 +1174,31 @@ url(../images/Dark-bg-mod.jpg);
        gap: 64px 24px;
        flex-wrap: wrap;
    }
-   .customers-list-icont {
+    .customers-list-icont {
     gap: 72px 24px;
-    padding-left: 108px;
-    padding-right: 108px;
-    
+  
    }
     .team-title-icone {
-        width: calc((100% - 48px) / 3); 
+        width: calc((100% - 72px) / 3);
+    }
+    .customers-icons {
+        width: 552px;
         
+    }
+    .header-address-link {
+        font-size: 12px;
     }
     .footer-main {
         max-width: 584px;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 74px 24px;
+
+        flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    text-align: start;
+    justify-content: unset;
     }
     .footer-digital-list {
         display: flex;
@@ -1233,7 +1242,7 @@ url(../images/Dark-bg-mod.jpg);
         
     }
     .header-container {
-        margin: 0;
+        margin: 0 auto;
     }
     .header-logo {
         margin-right: 120px;
@@ -1241,6 +1250,9 @@ url(../images/Dark-bg-mod.jpg);
     .header-addres {
         display: block;
         
+    }
+    .header {
+        padding: 0;
     }
     .header-navigation {
         max-width: none;
